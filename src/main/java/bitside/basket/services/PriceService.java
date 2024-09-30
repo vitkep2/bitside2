@@ -72,6 +72,6 @@ public class PriceService {
             }
         }
 
-        return Stream.concat(newProducts.stream(), duplicates.stream()).toList();
+        return newProducts;
     }
 }
