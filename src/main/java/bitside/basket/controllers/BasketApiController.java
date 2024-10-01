@@ -74,7 +74,7 @@ public class BasketApiController {
             value = "/baskets",
             produces = { "application/json" }
     )
-    public ResponseEntity<List<Basket>> addItemToBasket() {
+    public ResponseEntity<List<Basket>> getAllBaskets() {
         return ResponseEntity.ok().body(basketService.getAllBaskets());
     }
 }
